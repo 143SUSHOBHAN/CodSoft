@@ -1,0 +1,62 @@
+:root{
+      --primary-100:#c21d03;
+    --primary-200:#fd5732;
+    --primary-300:#ffb787;
+    --accent-100:#393939;
+    --accent-200:#bebebe;
+    --text-100:#232121;
+    --text-200:#4b4848;
+    --bg-100:#fbfbfb;
+    --bg-200:#f1f1f1;
+    --bg-300:#c8c8c8;
+      
+}
+
+
+body {
+    display: flex;          /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;       /* Takes up 100% of the viewport height */
+    margin: 0;               /* Removes default browser padding/margin */
+    background-color: #393939;
+}
+
+.calculator {
+  width: 320px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#display {
+  height: 60px;
+  background: #232121;
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #c8c8c8;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-100);
+  color: white;
+  border-radius: 5px;
+}
+
+#equals {
+  grid-row: span 2; /* Makes the equals button tall */
+  background: #fd5732;
+}
